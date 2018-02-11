@@ -83,3 +83,48 @@ class Solution
         return ptr;
     }
 }
+
+
+
+
+//************************
+//*  7. Reverse Integer  *
+//************************
+
+//O(n) solution
+class Solution 
+{
+    public int reverse(int x) 
+    {
+        String s = Integer.toString(x);
+        int sLen = s.length();
+        char[] charArr = s.toCharArray();
+        char temp = ' ';
+        int start = 0;
+        
+        if (charArr[0] == '-')
+        {
+            start = 1;
+            sLen += 1;
+        }
+        
+        for (int i = start; i < (sLen/2); i++)
+        {
+            temp = charArr[i];
+            charArr[i] = charArr[sLen-i-1];
+            charArr[sLen-i-1] = temp;
+        }
+        
+        s = String.valueOf(charArr);
+        
+        try
+        {    
+            x = Integer.parseInt(s);
+        }
+        catch (Exception e)
+        {
+            return 0;
+        }
+        return x;
+    }
+}
