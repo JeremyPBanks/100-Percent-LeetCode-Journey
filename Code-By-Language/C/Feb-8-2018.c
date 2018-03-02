@@ -1,8 +1,8 @@
-//************************
-//*  2. Add Two Numbers  *
-//************************
+//****************
+//*  1. Two Sum  *
+//****************
 
-//O(n) solution
+//Incomplete solution
 typedef struct Node
 {
   int val;
