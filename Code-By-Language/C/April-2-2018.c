@@ -1,3 +1,6 @@
+//*****************************************************
+//* 3. Longest Substring Without Repeating Characters *
+//*****************************************************
 
 //O(n) time, O(255) [for alpha]=O(1) space solution
 int lengthOfLongestSubstring(char* s) 
